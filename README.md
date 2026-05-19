@@ -29,7 +29,7 @@ Este projeto foi desenvolvido com o objetivo de criar uma identidade visual e re
 
 ## Acesse o projeto
 
-https://viowwllett-dev.vercel.app/
+https://viowwllett-developer.vercel.app/
 
 ## Desenvolvido por:
 
