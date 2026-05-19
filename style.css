@@ -176,7 +176,7 @@ h2::after {
    align-items:center;
    gap:20px;
 
-   padding:25px 0;
+   padding:25px 30px;
 
    border-bottom:1px solid #f6cfd5;
 }
@@ -206,7 +206,7 @@ h2::after {
 
 .icone-formacao i{
    color:#e8798c;
-   font-size:24px;
+   font-size:28px;
 }
 
 .texto-formacao h3{
