@@ -249,6 +249,8 @@ footer {
     visibility:hidden;
 
     transition:.3s;
+
+       z-index:999;
 }
 
 #voltar-topo.mostrar{
@@ -262,6 +264,16 @@ footer {
 
 
 @media (max-width: 1250px) {
+  #voltar-topo{
+      right:15px;
+      bottom:15px;
+
+      width:45px;
+      height:45px;
+
+      font-size:18px;
+   }
+
   header {
     align-items: center;
     text-align: center;
