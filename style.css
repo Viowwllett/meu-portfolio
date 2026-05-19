@@ -1,3 +1,4 @@
+html { scroll-behavior: smooth; }
 * {
   margin: 0;
   padding: 0;
@@ -5,37 +6,90 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Bricolage Grotesque';
   background: linear-gradient(100deg, #ffecf1, #f1c0dd);
-  color: #3b3335;
-  padding: 30px;
+  padding: 15px;
+}
+
+h3 {
+  font-family: 'Playfair Display', serif;
 }
 
 header {
   min-height: 90vh;
   background: linear-gradient(100deg, #fffaf1, #e9e0e5);
-  border: 3px solid #f8cdd4;
+  border: 1px solid #f8cdd4;
   border-radius: 28px;
-  padding: 50px;
+  padding: 150px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   box-shadow: 0 10px 30px rgba(220, 100, 120, 0.12);
   position: relative;
-  overflow: hidden;
+}
+.redes-header{
+   display:flex;
+   gap:30px;
+   margin-top:35px;
+}
+
+.redes-header a{
+   color:#e8798c;
+   font-size:30px;
+   transition:.3s;
+}
+
+.redes-header a:hover{
+   transform:translateY(-5px);
+   color:#d9566e;
+}
+.botoes-header {
+  display: flex;
+  gap: 20px;
+  margin-top: 35px;
+}
+
+.botao {
+  padding: 16px 32px;
+  border-radius: 6px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 13px;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.botao.principal {
+  background: #e05f75;
+  color: #fff;
+}
+
+.botao.secundario {
+  border: 1px solid #e05f75;
+  color: #e05f75;
+}
+
+.botao:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(220, 100, 120, 0.18);
+}
+
+.redes-header {
+  display: flex;
+  gap: 25px;
+  margin-top: 35px;
 }
 
 header img {
-  width: 330px;
-  height: 330px;
+  width: 450px;
+  height: 450px;
   object-fit: cover;
-  border-radius: 50%;
   position: absolute;
-  right: 80px;
+  right: 150px;
   top: 120px;
-  background: #ccbdc1;
   padding: 10px;
+  
 }
 
 header h1 {
@@ -43,16 +97,6 @@ header h1 {
   max-width: 500px;
   color: #33292c;
   margin-bottom: 20px;
-}
-
-header h1::before {
-  content: "Olá! Eu sou:"
-  display: block;
-  font-size: 14px;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  color: #e8798c;
-  margin-bottom: 15px;
 }
 
 header p {
@@ -112,6 +156,12 @@ h2::after {
   gap: 15px;
 }
 
+#habilidades li:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(220, 100, 120, 0.15);
+  
+}
+
 #habilidades li {
   padding: 14px 24px;
   border: 1px solid #f1b6c1;
@@ -120,6 +170,7 @@ h2::after {
   color: #4b4043;
   font-weight: 600;
   box-shadow: 0 5px 15px rgba(220, 100, 120, 0.08);
+  transition: 0.3s;
 }
 
 #projetos {
@@ -134,7 +185,7 @@ h2::after {
 
 article {
   background: #fff;
-  border: 1px solid #f2bdc6;
+  border: 1px solid #f2bdc6;  
   border-radius: 20px;
   padding: 30px;
   transition: 0.3s;
@@ -181,7 +232,8 @@ footer {
   color: #6f6265;
 }
 
-@media (max-width: 900px) {
+
+@media (max-width: 1250px) {
   header {
     align-items: center;
     text-align: center;
